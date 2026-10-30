@@ -1,0 +1,16 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Otis favicon">
+  <defs>
+    <radialGradient id="favBody" cx="35%" cy="30%" r="80%">
+      <stop offset="0%" stop-color="#5BC0DC"/>
+      <stop offset="60%" stop-color="#3DA9C7"/>
+      <stop offset="100%" stop-color="#2E8AA5"/>
+    </radialGradient>
+  </defs>
+  <ellipse cx="50" cy="56" rx="38" ry="40" fill="url(#favBody)"/>
+  <ellipse cx="40" cy="42" rx="10" ry="6" fill="rgba(255,255,255,0.22)"/>
+  <ellipse cx="38" cy="52" rx="4.5" ry="6.5" fill="#0E0E12"/>
+  <ellipse cx="62" cy="52" rx="4.5" ry="6.5" fill="#0E0E12"/>
+  <circle cx="36.5" cy="49" r="1.4" fill="#ffffff"/>
+  <circle cx="60.5" cy="49" r="1.4" fill="#ffffff"/>
+  <path d="M 38 72 Q 50 84 62 72 Q 60 80 50 84 Q 40 80 38 72 Z" fill="#A93860"/>
+</svg>

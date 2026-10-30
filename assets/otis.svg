@@ -1,0 +1,43 @@
+<svg viewBox="0 0 240 280" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Otis mascot">
+  <defs>
+    <radialGradient id="otis-body" cx="35%" cy="30%" r="80%">
+      <stop offset="0%" stop-color="#5BC0DC"/>
+      <stop offset="60%" stop-color="#3DA9C7"/>
+      <stop offset="100%" stop-color="#2E8AA5"/>
+    </radialGradient>
+    <linearGradient id="otis-mouth" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#9A2B4E"/>
+      <stop offset="100%" stop-color="#C24573"/>
+    </linearGradient>
+  </defs>
+
+  <ellipse cx="120" cy="250" rx="58" ry="9" fill="rgba(0,0,0,0.25)">
+    <animate attributeName="rx" values="58;38;58" keyTimes="0;0.5;1" dur="0.95s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.35;0.15;0.35" keyTimes="0;0.5;1" dur="0.95s" repeatCount="indefinite"/>
+  </ellipse>
+
+  <g>
+    <animateTransform attributeName="transform" type="translate"
+      values="0 0; 0 -30; 0 0" keyTimes="0;0.5;1" dur="0.95s"
+      calcMode="spline" keySplines="0.25 0.1 0.25 1; 0.5 0 0.5 1"
+      repeatCount="indefinite"/>
+
+    <path d="M 64 132 C 44 110, 40 78, 55 60 C 64 52, 76 56, 78 70 C 80 90, 84 112, 92 130 Z" fill="#3DA9C7"/>
+    <path d="M 176 132 C 196 110, 200 78, 185 60 C 176 52, 164 56, 162 70 C 160 90, 156 112, 148 130 Z" fill="#3DA9C7"/>
+
+    <ellipse cx="120" cy="160" rx="82" ry="84" fill="url(#otis-body)"/>
+
+    <ellipse cx="95" cy="115" rx="22" ry="14" fill="rgba(255,255,255,0.22)"/>
+
+    <path d="M 78 232 C 60 250, 48 240, 50 224 C 52 214, 70 212, 82 218 Z" fill="#3DA9C7"/>
+    <path d="M 162 232 C 180 250, 192 240, 190 224 C 188 214, 170 212, 158 218 Z" fill="#3DA9C7"/>
+
+    <ellipse cx="92" cy="138" rx="9.5" ry="13.5" fill="#0E0E12"/>
+    <ellipse cx="148" cy="138" rx="9.5" ry="13.5" fill="#0E0E12"/>
+    <circle cx="88.5" cy="132" r="3" fill="#ffffff"/>
+    <circle cx="144.5" cy="132" r="3" fill="#ffffff"/>
+
+    <path d="M 100 178 Q 120 198 140 178 Q 138 192 120 200 Q 102 192 100 178 Z" fill="url(#otis-mouth)"/>
+    <ellipse cx="120" cy="194" rx="10" ry="5" fill="#E07090"/>
+  </g>
+</svg>
