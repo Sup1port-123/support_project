@@ -2,7 +2,10 @@ import { createAdminClient } from "@/lib/supabase/admin";
 import { parseEmails } from "@/lib/report";
 
 const APP_URL =
-  process.env.NEXT_PUBLIC_APP_URL || "https://call-auditor-steel.vercel.app";
+  process.env.NEXT_PUBLIC_APP_URL ||
+  (process.env.VERCEL_PROJECT_PRODUCTION_URL
+    ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
+    : "http://localhost:3000");
 
 export async function sendLowScoreAlert(opts: {
   auditId: string;

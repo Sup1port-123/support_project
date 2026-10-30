@@ -78,8 +78,14 @@ function shortId(id: string): string { return id.slice(0, 8).toUpperCase(); }
 
 type InsightId = { auditId: string; label: string };
 
+const APP_URL =
+  process.env.NEXT_PUBLIC_APP_URL ||
+  (process.env.VERCEL_PROJECT_PRODUCTION_URL
+    ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
+    : "http://localhost:3000");
+
 function auditLink({ auditId, label }: InsightId): string {
-  return `<a href="https://call-auditor-otis4.vercel.app/audits/${auditId}" style="color:#6366f1;text-decoration:none;font-family:monospace;">${label}</a>`;
+  return `<a href="${APP_URL}/audits/${auditId}" style="color:#6366f1;text-decoration:none;font-family:monospace;">${label}</a>`;
 }
 
 function splitToPoints(text: string | null): string[] {
